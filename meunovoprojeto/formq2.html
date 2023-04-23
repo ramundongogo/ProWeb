@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formq2.html</title>
+</head>
+<body>
+<form method="post"><fieldset id="field1">
+        <legend>Dados Pessoais</legend>
+        <br>Digite seu nome:<input type="text"   id="Nome" name="user" placeholder="Ex: João da silva" required></br>
+        <br>Idade:<input type="number" id="Idade" name="idade" placeholder="18"></br>
+        <br>E-mail:<input type="email" name="email" id="email"placeholder="Ex:joao@silva.com"></br>
+        <br>Senha:<input type="password" name="pass" id="pass" placeholder="Digite uma senha FORTE" required></br>
+    
+        <br><br><br>
+      Selecione Seu Estado:
+      <select name="estado">
+        <option value="">- Selecione -</option>
+        <option value="">Ceará</option>
+        <option value="">Rio de janeiro</option>
+        <option value="">São Paulo</option>
+        <option value="">Mato Grosso</option>
+    </select>
+    </fieldset>
+    
+      <fieldset id="field2">
+            <legend>Dados Profissionais</legend>
+            <br><p>Selecione as tecnologias</p><input type="checkbox" name="html" id="html">HTML
+            <input type="checkbox" name="css" id="css">CSS
+            <input type="checkbox" name="javascript" id="javascript">JAVASCRIPT
+            <input type="checkbox" name="typescript" id="typescript">TYPESCRIPT<br>
+
+            <br><p>Selecione Sua Ocupação</p>
+            <input type="radio" name="Ocupação" id="front-end">FRONT-END
+            <input type="radio" name="Ocupação" id="back-end">BACK-END
+            <input type="radio" name="Ocupação" id="fullstack">FULL STACK</label>
+            <label><br><p>Escreva Sobre Você:</p>
+            <textarea name="" id="" cols="50" rows="5"></textarea>
+
+            <br><br><label for="">
+                Anexe seu currículo: <input type="file" name="arquivo" id="curriculo">
+            </label>
+
+        </fieldset>
+        <br><input type="button" value="Enviar">
+        <input type="button" value="Resetar">
+        </form>
+</body>
+</html>
